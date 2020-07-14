@@ -24,7 +24,7 @@ body
 }
 
 /** SECTIONS CUSTOM STYLING **/
-	.text-box, .section5
+	.text-box
 	{
 		background: var(--lightBlue2);
 		border-radius: 10px;
@@ -149,12 +149,30 @@ body
 /** SECTION 2 STYLING **/
 	.section2
 	{
-		background-image: url('img/sec2-bg.png');
+		background-image: url('img/sec2-bg.jpg');
+		background-repeat: no-repeat;
+		background-position-y: 68%;
 	}
 /** END SECTION 2 STYLING **/
 
+/** SECTION 3 STYLING **/
+	.section3
+	{
+		background-image: url('img/sec3-bg.jpg');
+		background-repeat: no-repeat;
+		background-position-y: 68%;
+	}
+/** END SECTION 3 STYLING **/
+
 /** SECTION 5 STYLING **/
-	.section5 .btn
+	.section5
+	{
+		background-image: url('img/sec5-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+	.text-box .btn
 	{
 		box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.25);
 	}
