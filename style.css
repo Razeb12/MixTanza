@@ -144,6 +144,51 @@ body
 		z-index: 10;
 		/*margin: 0 -106px;*/
 	}
+
+	.bg-items
+	{
+		position: absolute;
+	}
+
+	.bg-right
+	{
+		right: 0;
+	}
+
+	.bg-left
+	{
+		left: 0;
+	}
+
+	.element0, .element1, .element5, .element6
+	{
+		top: 147%;
+	}
+
+	.element2
+	{
+		top: 185%;
+	}
+
+	.element3
+	{
+		top: 255%;
+	}
+
+	.element4
+	{
+		top: 190%;
+	}
+
+	.element7
+	{
+		top: 287%;
+	}
+
+	 .element8
+	{
+		top: 203%;
+	}
 /** END SECTION 1 STYLING **/
 
 /** SECTION 2 STYLING **/
@@ -172,7 +217,7 @@ body
 		background-position: right bottom;
 	}
 
-	.text-box .btn
+	.text-box button
 	{
 		box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.25);
 	}
