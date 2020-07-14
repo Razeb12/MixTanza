@@ -147,7 +147,10 @@ body
 /** END SECTION 1 STYLING **/
 
 /** SECTION 2 STYLING **/
-	
+	.section2
+	{
+		background-image: url('img/sec2-bg.png');
+	}
 /** END SECTION 2 STYLING **/
 
 /** SECTION 5 STYLING **/
