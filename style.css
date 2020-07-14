@@ -223,6 +223,28 @@ body
 	}
 /** END SECTION 5 STYLING **/
 
+/** SECTION 5 STYLING **/
+	.element12
+	{
+		top: 997%;
+	}
+
+	.element13
+	{
+		top: 1020%;
+	}
+
+	.element14
+	{
+		top: 1005%;
+	}
+
+	.element15, .element16
+	{
+		top: 925%;
+	}
+/** END SECTION 5 STYLING **/
+
 /** FOOTER STYLING **/
 	footer
 	{
