@@ -23,6 +23,25 @@ body
 	--lightBlue2: #27264D;
 }
 
+/** SECTIONS CUSTOM STYLING **/
+	.text-box, .section5
+	{
+		background: var(--lightBlue2);
+		border-radius: 10px;
+	}
+
+	.cta, .cta p
+	{
+		color: var(--ctaColor);
+		line-height: 29px;
+	}
+
+	.grey-text
+	{
+		color: #E4E6EC;
+	}
+/** SECTIONS CUSTOM STYLING **/
+
 /** BUTTON STYLING **/
 	.btn
 	{
@@ -34,7 +53,6 @@ body
 	h2
 	{
 		font-family: Poppins;
-		font-weight: bold;
 		font-size: 36px;
 		line-height: 54px;
 	}
@@ -46,7 +64,7 @@ body
 		background-color: #C4C4C4;
 	}
 
-	header h1, header h2, .countdown
+	header h1, header h2, .countdown, .cta
 	{
 		color: var(--bodyColor);
 	}
@@ -58,7 +76,6 @@ body
 
 	header h1
 	{
-		font-weight: bold;
 		font-size: 4rem;
 		line-height: 4rem;
 		letter-spacing: -0.055em;
@@ -66,7 +83,6 @@ body
 
 	header h2
 	{
-		font-weight: normal;
 		line-height: 29px;
 		letter-spacing: 0.1em;
 	}
@@ -81,7 +97,6 @@ body
 	.day, .hour, .min, .colon1, .colon2
 	{
 		font-family: Poppins;
-		font-weight: bold;
 		font-size: 96px;
 		line-height: 144px;
 		letter-spacing: 0.5em;
@@ -121,9 +136,7 @@ body
 	.section1 p
 	{
 		font-weight: 500;
-		font-size: 24px;
 		line-height: 29px;
-		color: #E4E6EC;
 	}
 
 	.app-mid
@@ -142,20 +155,11 @@ body
 	{
 		box-shadow: 0px 16px 40px rgba(112, 144, 176, 0.25);
 	}
+
+
 /** END SECTION 5 STYLING **/
 
-	.text-box, .section5
-	{
-		background: var(--lightBlue2);
-		border-radius: 10px;
-	}
-
-	.cta, .cta p
-	{
-		color: var(--ctaColor);
-		font-weight: bold;
-		line-height: 29px;
-	}
+	
 
 	/*.side-bar::before
 	{
