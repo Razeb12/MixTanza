@@ -1,0 +1,161 @@
+body
+{
+	background-color: #0A0E2B;
+}
+
+*
+{
+	margin: 0;
+	font-family: 'Montserrat', Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+    line-height: 36px;
+    box-sizing: border-box;
+}
+
+:root
+{
+	--ctaColor: #F74B42;
+	--accent: #3BFAFC;
+	--bodyColor: #212020;
+	--buttonColor: #F74B42;
+	--lightBlue2: #27264D;
+}
+
+/** BUTTON STYLING **/
+	.btn
+	{
+		background-color: var(--buttonColor);
+	}
+/** END BUTTON STYLING **/
+
+/** ELEMENT-WIDE HEADING STYLING **/
+	h2
+	{
+		font-family: Poppins;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 54px;
+	}
+/** END ELEMENT-WIDE HEADING STYLING **/
+
+/** HEADER SECTION **/
+	header
+	{
+		background-color: #C4C4C4;
+	}
+
+	header h1, header h2, .countdown
+	{
+		color: var(--bodyColor);
+	}
+
+	header h1, .countdown
+	{
+		font-family: Poppins;
+	}
+
+	header h1
+	{
+		font-weight: bold;
+		font-size: 4rem;
+		line-height: 4rem;
+		letter-spacing: -0.055em;
+	}
+
+	header h2
+	{
+		font-weight: normal;
+		line-height: 29px;
+		letter-spacing: 0.1em;
+	}
+
+	.countdown
+	{
+		font-weight: 600;
+		font-size: 64px;
+		line-height: 96px;
+	}
+
+	.day, .hour, .min, .colon1, .colon2
+	{
+		font-family: Poppins;
+		font-weight: bold;
+		font-size: 96px;
+		line-height: 144px;
+		letter-spacing: 0.5em;
+		color: #000000;
+		opacity: 0.15;
+		position: absolute;
+		top: 36%;
+	}
+
+	.day
+	{
+		left: 29%
+	}
+
+	.hour
+	{
+		right: 43%
+	}
+
+	.min
+	{
+		right: 24%
+	}
+
+	.colon1
+	{
+		left: 40%
+	}
+
+	.colon2
+	{
+		right: 36%
+	}
+/** END HEADER SECTION **/
+
+/** SECTION 1 STYLING **/
+	.section1 p
+	{
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		color: #E4E6EC;
+	}
+
+	.app-mid
+	{
+		z-index: 10;
+		/*margin: 0 -106px;*/
+	}
+/** END SECTION 1 STYLING **/
+
+/** SECTION 2 STYLING **/
+	
+/** END SECTION 2 STYLING **/
+
+	.text-box
+	{
+		background: var(--lightBlue2);
+		border-radius: 10px;
+	}
+
+	.cta, .cta p
+	{
+		color: var(--ctaColor);
+		font-weight: bold;
+		line-height: 29px;
+	}
+
+	/*.side-bar::before
+	{
+		position: absolute;
+		width: 12px;
+		height: 137px;
+		left: 140px;
+		top: 2437px;
+		background: var(--accent);
+	}*/
