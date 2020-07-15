@@ -15,11 +15,11 @@
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    // Display the result in element (large screens)
-    document.getElementById("countDownTimer").innerHTML = days + '<p class="mx-5"></p>' + hours + '<p class="mx-5"></p>' + minutes;
+    // Display the result in element (thank you page large screens)
+    document.getElementById("countDownTimer-ty").innerHTML = days + "days" + '<p class="mx-5 countdown">:</p>' + hours + "hours" +'<p class="mx-5 countdown">:</p>' + minutes + "minutes";
 
-    // Display the result in element (smaller screens)
-    document.getElementById("countDownTimer-sm").innerHTML = days + "d : " + hours + "h : "
+    // Display the result in element (thank you page smaller screens)
+    document.getElementById("countDownTimer-ty-sm").innerHTML = days + "d : " + hours + "h : "
     + minutes + "m";
 
     // If the count down is finished, write some text
@@ -28,24 +28,3 @@
       document.getElementById("countDownTimer").innerHTML = "We're Live Now!";
     }
   }, 1000);
-
-
-// customScripts
-    document.addEventListener('DOMContentLoaded', function() {
-    // Animate on Scroll
-    AOS.init({
-      mirror: false
-    });
-
-    // Flickity Slider
-    var elem = document.querySelector('.main-carousel');
-    var flkty = new Flickity( elem, {
-      // options
-      cellAlign: 'center',
-      contain: true,
-      autoPlay: true,
-      autoPlay: 3000,
-      fullscreen: true
-    });
-  
-    }, false);

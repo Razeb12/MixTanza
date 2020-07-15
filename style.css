@@ -65,7 +65,7 @@ body
 		background-image: url('img/hero-bg.jpg');
 	}
 
-	header h1, .countdown, .cta
+	header h1, .countdown, .cta, a
 	{
 		color: var(--textLight);
 	}
@@ -243,7 +243,7 @@ body
 	}
 /** END SECTION 5 STYLING **/
 
-/** SECTION 5 STYLING **/
+/** SECTION 6 STYLING **/
 	.element12
 	{
 		top: 997%;
@@ -263,7 +263,7 @@ body
 	{
 		top: 925%;
 	}
-/** END SECTION 5 STYLING **/
+/** END SECTION 6 STYLING **/
 
 /** FOOTER STYLING **/
 	footer
@@ -289,6 +289,7 @@ body
 		background: var(--accent);
 	}*/
 
+/** FLICKITY CAROUSEL STYLING **/
 	.carousel-cell
 	{
 	  	height: 550px;
@@ -316,3 +317,22 @@ body
 	.carousel.is-fullscreen .carousel-cell {
 	  height: 100%;
 	}
+/** END FLICKITY CAROUSEL STYLING **/
+
+/** THANK YOU PAGE STYLING **/
+	@media only screen and (min-width: 1024px)
+	{
+		.thankyou h1
+		{
+			font-size: 3rem;
+			line-height: 4rem;
+			letter-spacing: 0.05em;
+		}
+
+		.thankyou h2
+		{
+			line-height: 29px;
+			letter-spacing: 0.1em;
+		}
+	}
+/** END THANK YOU PAGE STYLING **/
