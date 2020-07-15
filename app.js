@@ -42,7 +42,8 @@
       cellAlign: 'center',
       contain: true,
       autoPlay: true,
-      autoPlay: 3000
+      autoPlay: 3000,
+      fullscreen: true
     });
   
     }, false);

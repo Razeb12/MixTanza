@@ -112,7 +112,8 @@ body
 		color: var(--ctaColor);
 		opacity: 0.25;
 		position: absolute;
-		top: 36%;
+		top: 9%;
+		z-index: -1;
 	}
 
 	.day
@@ -152,6 +153,21 @@ body
 	{
 		z-index: 10;
 		/*margin: 0 -106px;*/
+	}
+
+	.app-mid img
+	{
+		animation: mover 0.5s infinite alternate;
+		-webkit-animation: mover 0.5s infinite alternate;
+	}
+
+	@-webkit-keyframes mover {
+	    0% { transform: translateY(0); }
+	    100% { transform: translateY(-10px); }
+	}
+	@keyframes mover {
+	    0% { transform: translateY(0); }
+	    100% { transform: translateY(-10px); }
 	}
 
 	.bg-right
@@ -295,4 +311,8 @@ body
 		width: 40px;
 		margin: 0;
 		border-radius: 0;
+	}
+
+	.carousel.is-fullscreen .carousel-cell {
+	  height: 100%;
 	}
