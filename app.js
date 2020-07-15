@@ -15,12 +15,12 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-  // Display the result in element
+  // Display the result in element (large screens)
   document.getElementById("countDownTimer").innerHTML = days + '<p class="mx-5"></p>' + hours + '<p class="mx-5"></p>' + minutes;
-    // document.getElementById("countDownTimer").innerHTML = days + " " + hours + " " + minutes;
 
-  // document.getElementById("countDownTimer").innerHTML = days + " : " + hours + " : "
-  // + minutes + " ";
+  // Display the result in element (smaller screens)
+  document.getElementById("countDownTimer-sm").innerHTML = days + "d: " + hours + "h: "
+  + minutes + "m";
 
     // document.getElementById("day").innerHTML = days;
     // document.getElementById("hour").innerHTML = hours;
