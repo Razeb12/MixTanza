@@ -8,16 +8,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<!-- BOOTSTRAP V4 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Flickity Slider -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<!-- CSS FILE -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
 		<!-- NAVIGATION AREA -->
-		<nav class="navbar navbar-light">
+		<nav class="navbar navbar-dark py-md-3">
 			<div class="container">
-				<a href="#" class="navbar-brand logo">MixTanza</a>
-				<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="row align-items-center d-md-none">
+					<div class="col-3">
+						<a href="#" class="navbar-brand mr-0 mr-md-3 logo">MixTanza</a>
+					</div>
+					<div class="col"></div>
+					<div class="col-6">
+						<button class="btn btn-danger text-white px-3">Get Early Access</button>
+					</div>
+				</div>
+
+				<a href="#" class="navbar-brand logo d-none d-md-inline-block">MixTanza</a>
+				<button class="btn btn-danger text-white px-4 ml-auto d-none d-md-inline-block">Get Early Access</button>
+				<!-- <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -28,7 +41,7 @@
 						<li class="nav-item"><a href="#" class="nav-link mx-3">Feature2</a></li>
 						<li class="nav-item"><a href="#" class="nav-link mx-3">Feature3</a></li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</nav>
 		<!-- END NAVIGATION AREA -->
@@ -73,8 +86,8 @@
 	<!-- END HEADER AREA -->
 
 	<!-- SECTION 1 -->
-	<section class="container-fluid my-md-5 py-md-5 section1">
-		<div class="d-none d-md-block position-relative">
+	<section class="container-fluid mb-md-5 pb-md-5 section1">
+		<div class="d-none d-md-block position-relative pb-md-5">
 			<img src="img/sec1-ele0.png" class="img-fluid position-absolute element0 bg-right">
 			<img src="img/sec1-ele1.png" class="img-fluid position-absolute element1 bg-right">
 			<img src="img/sec1-ele2.png" class="img-fluid position-absolute element2 bg-right">
@@ -86,17 +99,32 @@
 			<img src="img/sec1-ele8.png" class="img-fluid position-absolute element8 bg-left">
 		</div>
 
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-7 pl-md-0">
-					<h2 class="text-white text-center text-md-left font-weight-bold mb-0">Mixtanza is the world’s first remote audio mixing collaborative App</h2>
+		<div class="container pt-md-5">
+
+			<!-- Carousel for mobile and tablets -->
+			<div id="main-carousel" class="row main-carousel d-lg-none my-md-4 py-md-5" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000 }'>
+				<div class="col carousel-cell text-center">
+					<img src="img/app-left.png" class="img-fluid">
 				</div>
-				<div class="col-12 col-md-5 text-center text-md-left my-4 my-md-0 pr-md-0 pl-md-4">
+				<div class="col carousel-cell text-center">
+					<img src="img/app-left.png" class="img-fluid">
+				</div>
+				<div class="col carousel-cell text-center">
+					<img src="img/app-right.png" class="img-fluid">
+				</div>
+			</div>
+
+			<div class="row align-items-center mt-5 mt-md-0">
+				<div class="col-12 col-lg-7 pl-md-0">
+					<h2 class="text-white text-center text-lg-left font-weight-bold mb-0">Mixtanza is the world’s first remote audio mixing collaborative App</h2>
+				</div>
+				<div class="col-12 col-lg-5 text-center text-lg-left my-4 my-lg-0 pr-lg-0 pl-lg-4">
 					<p class="grey-text mb-0">It offers collaboration with superb audio engineers around the globe.</p>
 				</div>
 			</div>
 
-			<div class="row no-gutters align-items-center d-none d-md-flex mt-md-4 py-md-5">
+			<!-- App screen display for large screens - laptop and above -->
+			<div class="row no-gutters align-items-center d-none d-lg-flex mt-md-4 py-md-5">
 				<div class="col">
 					<img src="img/app-left.png" class="img-fluid">
 				</div>
@@ -192,7 +220,7 @@
 
 	<!-- SECTION 6 -->
 	<section class="container-fluid my-md-5 py-md-5 text-center">
-		<div class="d-none d-md-block position-relative">
+		<div class="d-none position-relative">
 			<img src="img/sec6-ele1.png" class="img-fluid position-absolute element10 bg-right">
 			<img src="img/sec6-ele2.png" class="img-fluid position-absolute element11 bg-right">
 			<img src="img/sec6-ele3.png" class="img-fluid position-absolute element12 bg-right">
@@ -203,7 +231,7 @@
 		</div>
 
 		<div class="container">
-			<div class="row my-5 py-md-5">
+			<div class="row my-5">
 				<div class="col-10 mx-auto">
 					<img src="img/logo.png">
 					<h2 class="text-white font-weight-bold pt-md-3">Start remote audio mixing collaboration</h2>
@@ -246,10 +274,13 @@
 	</footer>
 	<!-- END FOOTER SECTION -->
 
+	<!-- Custom JS -->
 	<script type="text/javascript" src="app.js"></script>
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!-- Flickity Slider -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

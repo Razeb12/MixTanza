@@ -160,32 +160,32 @@ body
 
 	.element0, .element1, .element5, .element6
 	{
-		top: 147%;
+		top: 0;
 	}
 
 	.element2
 	{
-		top: 185%;
+		top: 280px;
 	}
 
 	.element3
 	{
-		top: 255%;
+		top: 700px;
 	}
 
 	.element4
 	{
-		top: 190%;
+		top: 300px;
 	}
 
 	.element7
 	{
-		top: 287%;
+		top: 900px;
 	}
 
 	 .element8
 	{
-		top: 203%;
+		top: 380px;
 	}
 /** END SECTION 1 STYLING **/
 
@@ -266,3 +266,27 @@ body
 		top: 2437px;
 		background: var(--accent);
 	}*/
+
+	.carousel-cell
+	{
+	  	height: 550px;
+	}
+
+	.flickity-viewport
+	{
+		width: 100%;
+	}
+
+	.flickity-prev-next-button
+	{
+		display: none;
+	}
+
+	.flickity-page-dots .dot
+	{
+		background-color: var(--ctaColor);
+		height: 4px;
+		width: 40px;
+		margin: 0;
+		border-radius: 0;
+	}
