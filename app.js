@@ -19,12 +19,8 @@
     document.getElementById("countDownTimer").innerHTML = days + '<p class="mx-5"></p>' + hours + '<p class="mx-5"></p>' + minutes;
 
     // Display the result in element (smaller screens)
-    document.getElementById("countDownTimer-sm").innerHTML = days + "d: " + hours + "h: "
+    document.getElementById("countDownTimer-sm").innerHTML = days + "d : " + hours + "h : "
     + minutes + "m";
-
-      // document.getElementById("day").innerHTML = days;
-      // document.getElementById("hour").innerHTML = hours;
-      // document.getElementById("min").innerHTML = minutes;
 
     // If the count down is finished, write some text
     if (distance < 0) {
@@ -32,3 +28,21 @@
       document.getElementById("countDownTimer").innerHTML = "We're Live Now!";
     }
   }, 1000);
+
+
+// customScripts
+    document.addEventListener('DOMContentLoaded', function() {
+    // Animate on Scroll
+    AOS.init();
+
+    // Flickity Slider
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+      // options
+      cellAlign: 'center',
+      contain: true,
+      autoPlay: true,
+      autoPlay: 3000
+    });
+  
+    }, false);

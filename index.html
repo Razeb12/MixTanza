@@ -8,6 +8,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<!-- BOOTSTRAP V4 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Animate on Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Flickity Slider -->
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<!-- CSS FILE -->
@@ -53,7 +55,7 @@
 					<h1 class="font-weight-bold">MixTanza</h1>
 					<h2>The Future of Audio Mixing</h2>
 					<div class="d-lg-none">
-						<p id="countDownTimer-sm" class="font-weight-bold"></p>
+						<p id="countDownTimer-sm" class="text-white font-weight-bold"></p>
 					</div>
 					<div class="d-none d-lg-block">
 						<p id="countDownTimer" class="countdown d-inline-flex mt-md-4">
@@ -102,7 +104,7 @@
 		<div class="container pt-md-5">
 
 			<!-- Carousel for mobile and tablets -->
-			<div id="main-carousel" class="row main-carousel d-lg-none my-md-4 py-md-5" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000 }'>
+			<div id="main-carousel" class="row main-carousel d-lg-none my-md-4 py-md-5">
 				<div class="col carousel-cell text-center">
 					<img src="img/app-left.png" class="img-fluid">
 				</div>
@@ -114,7 +116,7 @@
 				</div>
 			</div>
 
-			<div class="row align-items-center mt-5 mt-md-0">
+			<div class="row align-items-center mt-5 mt-lg-0">
 				<div class="col-12 col-lg-7 pl-md-0">
 					<h2 class="text-white text-center text-lg-left font-weight-bold mb-0">Mixtanza is the world’s first remote audio mixing collaborative App</h2>
 				</div>
@@ -128,7 +130,7 @@
 				<div class="col">
 					<img src="img/app-left.png" class="img-fluid">
 				</div>
-				<div class="col app-mid">
+				<div class="col app-mid" data-aos="fade-down" data-aos-duration="1500">
 					<img src="img/app-mid.png" class="img-fluid">
 				</div>
 				<div class="col">
@@ -280,6 +282,8 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!-- Animate on Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- Flickity Slider -->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
