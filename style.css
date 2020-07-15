@@ -279,15 +279,35 @@ body
 	}
 /** END FOOTER STYLING **/
 
-	/*.side-bar::before
+	.side-bar
 	{
 		position: absolute;
 		width: 12px;
 		height: 137px;
-		left: 140px;
-		top: 2437px;
+		left: 0;
 		background: var(--accent);
-	}*/
+	}
+
+	@media only screen and (max-width: 1024px)
+	{
+		.side-bar
+		{
+			height: 40%;
+		}
+	}
+
+	.long-bar
+	{
+		height: 183px;
+	}
+
+	@media only screen and (max-width: 1024px)
+	{
+		.long-bar
+		{
+			height: 50%;
+		}
+	}
 
 /** FLICKITY CAROUSEL STYLING **/
 	.carousel-cell
