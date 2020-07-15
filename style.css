@@ -41,6 +41,36 @@ body
 	{
 		color: #E4E6EC;
 	}
+
+	.side-bar
+	{
+		position: absolute;
+		width: 12px;
+		height: 137px;
+		left: 0;
+		background: var(--accent);
+	}
+
+	@media only screen and (max-width: 1024px)
+	{
+		.side-bar
+		{
+			height: 40%;
+		}
+	}
+
+	.long-bar
+	{
+		height: 183px;
+	}
+
+	@media only screen and (max-width: 1024px)
+	{
+		.long-bar
+		{
+			height: 50%;
+		}
+	}
 /** SECTIONS CUSTOM STYLING **/
 
 /** BUTTON STYLING **/
@@ -180,11 +210,6 @@ body
 		left: 0;
 	}
 
-	.element0, .element1, .element5, .element6
-	{
-		top: 0;
-	}
-
 	.element2
 	{
 		top: 280px;
@@ -246,22 +271,17 @@ body
 /** SECTION 6 STYLING **/
 	.element12
 	{
-		top: 997%;
+		top: 315px;
 	}
 
 	.element13
 	{
-		top: 1020%;
+		top: 315px;
 	}
 
 	.element14
 	{
-		top: 1005%;
-	}
-
-	.element15, .element16
-	{
-		top: 925%;
+		top: 315px;
 	}
 /** END SECTION 6 STYLING **/
 
@@ -278,36 +298,6 @@ body
 		line-height: 29px;
 	}
 /** END FOOTER STYLING **/
-
-	.side-bar
-	{
-		position: absolute;
-		width: 12px;
-		height: 137px;
-		left: 0;
-		background: var(--accent);
-	}
-
-	@media only screen and (max-width: 1024px)
-	{
-		.side-bar
-		{
-			height: 40%;
-		}
-	}
-
-	.long-bar
-	{
-		height: 183px;
-	}
-
-	@media only screen and (max-width: 1024px)
-	{
-		.long-bar
-		{
-			height: 50%;
-		}
-	}
 
 /** FLICKITY CAROUSEL STYLING **/
 	.carousel-cell
