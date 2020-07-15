@@ -269,19 +269,24 @@ body
 /** END SECTION 5 STYLING **/
 
 /** SECTION 6 STYLING **/
+	.element10, .element15, .element16
+	{
+		top: -300px;
+	}
+
 	.element12
 	{
-		top: 315px;
+		top: 450px;
 	}
 
 	.element13
 	{
-		top: 315px;
+		top: 525px;
 	}
 
 	.element14
 	{
-		top: 315px;
+		top: 425px;
 	}
 /** END SECTION 6 STYLING **/
 
