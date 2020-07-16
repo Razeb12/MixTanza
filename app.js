@@ -32,11 +32,6 @@
 
 // customScripts
     document.addEventListener('DOMContentLoaded', function() {
-    // Animate on Scroll
-    AOS.init({
-      mirror: false
-    });
-
     // Flickity Slider
     var elem = document.querySelector('.main-carousel');
     var flkty = new Flickity( elem, {
@@ -47,5 +42,45 @@
       autoPlay: 3000,
       fullscreen: true
     });
+
+    // Animate on Scroll
+    AOS.init({
+      mirror: false
+    });
   
     }, false);
+
+    //section 6 bg elements animation
+    var moveDiv = document.getElementById('mover');
+    var rightPulse = document.getElementById('rightPulse');
+    var leftPulse = document.getElementById('leftPulse');
+    var spinDiv = document.getElementById('spin');
+    var spin2Div = document.getElementById('spin2');
+    var logoPulse = document.getElementById('logo');
+
+    //mouse enter animation
+    document.getElementById("access").addEventListener("mouseenter", function(event) {
+      mouseEnter(event);
+    });
+
+    function mouseEnter(e) {
+      moveDiv.style.animation = 'mover 0.3s infinite alternate';
+      rightPulse.style.animation = 'rpulse 0.5s infinite alternate';
+      leftPulse.style.animation = 'lpulse 0.5s infinite alternate';
+      spinDiv.style.animation = 'spin 2s infinite linear';
+      spin2Div.style.animation = 'spin 1s infinite linear';
+      logoPulse.style.animation = 'logopulse 0.6s infinite alternate';
+    }
+
+    //mouse leave animation
+    document.getElementById("access").addEventListener("mouseleave", function(event) {
+      mouseLeave(event);
+    });
+
+    function mouseLeave(e) {
+      moveDiv.style.animation = 'none';
+      rightPulse.style.animation = 'none';
+      leftPulse.style.animation = 'none';
+      spinDiv.style.animation = 'none';
+      spin2Div.style.animation = 'none';
+    }

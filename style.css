@@ -173,16 +173,43 @@ body
 /** END HEADER SECTION **/
 
 /** SECTION 1 STYLING **/
+	/*.section1 h2
+	{
+		font-family: 'Proxima Nova';
+		font-size: 48px;
+		line-height: 58px;
+	}*/
+
 	.section1 p
 	{
 		font-weight: 500;
 		line-height: 29px;
 	}
 
+	@media only screen and (min-width: 1024px)
+	{
+		.vh-50
+		{
+			height: 75vh;
+		}
+	}
+
+	.app-left
+	{
+		left: 19%;
+		top: 20px;
+	}
+
 	.app-mid
 	{
+		left: 40%;
 		z-index: 10;
-		/*margin: 0 -106px;*/
+	}
+
+	.app-right
+	{
+		right: 14%;
+		top: 20px;
 	}
 
 	.app-mid img
@@ -287,6 +314,69 @@ body
 	.element14
 	{
 		top: 425px;
+	}
+
+	.title
+	{
+		font-size: 48px;
+		letter-spacing: -0.055em;
+	}
+
+	.subtitle
+	{
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		color: #D7D9DD;
+	}
+
+	/* BG ANIMATIONS */
+	@keyframes spin
+	{
+	    from
+	    {
+	        transform: rotate(0deg);
+	    }
+	    to
+	    {
+	        transform: rotate(360deg);
+	    }
+	}
+
+	@keyframes rpulse
+	{
+	    0%
+	    { 
+	    	transform: translateX(0); 
+	    }
+	    100%
+	    { 
+	    	transform: translateX(-10px); 
+	    }
+	}
+
+	@keyframes lpulse
+	{
+	    0% 
+	    { 
+	    	transform: translateX(-5px); 
+	    }
+	    100% 
+	    { 
+	    	transform: translateX(0); 
+	    }
+	}
+
+	@keyframes logopulse
+	{
+	    0% 
+	    { 
+	    	transform: scale(1); 
+	    }
+	    100% 
+	    { 
+	    	transform: scale(0.7); 
+	    }
 	}
 /** END SECTION 6 STYLING **/
 

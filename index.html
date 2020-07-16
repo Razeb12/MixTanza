@@ -6,6 +6,7 @@
 	<!-- Font to be used -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
 	<!-- BOOTSTRAP V4 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!-- Animate on Scroll CSS -->
@@ -23,7 +24,7 @@
 			<div class="container">
 				<div class="row align-items-center d-md-none">
 					<div class="col-3">
-						<a href="#" class="navbar-brand mr-0 mr-md-3 logo">MixTanza</a>
+						<a href="#" class="navbar-brand mr-0 mr-md-3 logo"><img src="img/logo.png"></a>
 					</div>
 					<div class="col"></div>
 					<div class="col-6">
@@ -31,7 +32,7 @@
 					</div>
 				</div>
 
-				<a href="#" class="navbar-brand logo d-none d-md-inline-block">MixTanza</a>
+				<a href="#" class="navbar-brand logo d-none d-md-inline-block"><img src="img/logo.png"></a>
 				<a href="#access"><button class="btn btn-danger text-white px-4 ml-auto d-none d-md-inline-block">Get Early Access</button></a>
 				<!-- <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -118,16 +119,17 @@
 			</div>
 
 			<div class="row align-items-center mt-5 mt-lg-0">
-				<div class="col-12 col-lg-7 pl-md-0" data-aos="fade-down" data-aos-duration="400">
+				<div class="col-12 col-lg-6 pl-md-0" data-aos="fade-down" data-aos-duration="400">
 					<h2 class="text-white text-center text-lg-left font-weight-bold mb-0">Mixtanza is the world’s first remote audio mixing collaborative App</h2>
 				</div>
+				<div class="col"></div>
 				<div class="col-12 col-lg-5 text-center text-lg-left my-4 my-lg-0 pr-lg-0 pl-lg-4" data-aos="fade-up" data-aos-duration="400">
 					<p class="grey-text mb-0">It offers collaboration with superb audio engineers around the globe.</p>
 				</div>
 			</div>
 
 			<!-- App screen display for large screens - laptop and above -->
-			<div class="row no-gutters align-items-center d-none d-lg-flex mt-md-4 py-md-5">
+			<div class="row no-gutters align-items-center d-none mt-md-4 py-md-5">
 				<div class="col" data-aos="fade-right" data-aos-duration="1200">
 					<img src="img/app-left.png" class="img-fluid">
 				</div>
@@ -138,6 +140,17 @@
 					<img src="img/app-right.png" class="img-fluid">
 				</div>
 			</div>
+
+			<!-- App screen display for large screens - laptop and above -->
+			<div class="row no-gutters align-items-center d-none d-lg-flex apps mt-md-4 py-md-5">
+				<div class="col position-relative">
+					<img src="img/app-left.png" class="img-fluid position-absolute app-left" data-aos="fade-right" data-aos-duration="1200">
+					<img src="img/app-mid.png" class="img-fluid position-absolute app-mid" data-aos="fade-down" data-aos-duration="1500">
+					<img src="img/app-right.png" class="img-fluid position-absolute app-right" data-aos="fade-left" data-aos-duration="1200">
+				</div>
+			</div>
+
+			<div class="vh-50"></div>
 		</div>
 	</section>
 	<!-- END SECTION 1 -->
@@ -151,13 +164,13 @@
 					<div class="side-bar"></div>
 					<p class="text-white">Remotely access your mixing console on any device (Mobile Phone, Tablet and Desktop). MixTanza mirrors your console workstation to your device.</p>
 					<span class="cta">
-						<p class="pt-3 font-weight-bold">Get Early Access <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<a href="#access"><p class="pt-3 font-weight-bold">Get Early Access <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						  <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
 						  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-						</svg></p>
+						</svg></p></a>
 					</span>
 				</div>
-				<div class="col-12 col-md order-1 order-md-2 my-3 my-md-0" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec2-app.png" class="img-fluid"></div>
+				<div class="col-12 col-md order-1 order-md-2 my-3 my-md-0 text-center" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec2-app.png" class="img-fluid"></div>
 			</div>
 		</div>
 	</section>
@@ -173,10 +186,10 @@
 					<div class="side-bar"></div>
 					<p class="text-white">Mixing access to all input and output channels of the console. Handle channel mixing effortlessly without being on the console.</p>
 					<span class="cta">
-						<p class="pt-3 font-weight-bold">Get Early Access <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<a href="#access"><p class="pt-3 font-weight-bold">Get Early Access <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						  <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
 						  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-						</svg></p>
+						</svg></p></a>
 					</span>
 				</div>
 			</div>
@@ -193,13 +206,13 @@
 					<div class="side-bar long-bar"></div>
 					<p class="text-white">Invite other audio engineers to your workstation to help rig your system to optimal performance. Customize and control what they have access to and can see for improved workflow.</p>
 					<span class="cta">
-						<p class="pt-3 font-weight-bold">Get Early Access <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<a href="#access"><p class="pt-3 font-weight-bold">Get Early Access <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						  <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
 						  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-						</svg></p>
+						</svg></p></a>
 					</span>
 				</div>
-				<div class="col-12 col-md my-3 my-md-0 order-1 order-md-2" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec4-app.png" class="img-fluid"></div>
+				<div class="col-12 col-md my-3 my-md-0 order-1 order-md-2 text-center" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec4-app.png" class="img-fluid"></div>
 			</div>
 		</div>
 	</section>
@@ -225,22 +238,24 @@
 	<!-- END SECTION 5 -->
 
 	<!-- SECTION 6 -->
-	<section id="access" class="container-fluid my-md-5 px-md-0 py-md-5 text-center">
-		<div class="d-none d-md-block position-relative py-5">
-			<img src="img/sec6-ele0.png" class="img-fluid position-absolute element10 bg-right">
-			<img src="img/sec6-ele1.png" class="img-fluid position-absolute element10 bg-right">
-			<img src="img/sec6-ele2.png" class="img-fluid position-absolute element11 bg-right">
-			<img src="img/sec6-ele3.png" class="img-fluid position-absolute element12 bg-right">
-			<img src="img/sec6-ele4.png" class="img-fluid position-absolute element13 bg-left">
+	<section id="access" class="container-fluid mover-box my-md-5 px-md-0 py-md-5 text-center">
+		<div class="d-none d-md-block position-relative mover-container py-5">
+			<img src="img/sec6-ele0.png" id="spin" class="img-fluid position-absolute element10 bg-right">
+			<img src="img/sec6-ele1.png" class="img-fluid position-absolute mover element10 bg-right">
+			<img src="img/sec6-ele2.png" id="leftPulse" class="img-fluid position-absolute element11 bg-right">
+			<img src="img/sec6-ele3.png" id="mover" class="img-fluid position-absolute element12 bg-right">
+			<img src="img/sec6-ele4.png" id="spin2" class="img-fluid position-absolute element13 bg-left">
 			<img src="img/sec6-ele5.png" class="img-fluid position-absolute element14 bg-left">
-			<img src="img/sec6-ele6.png" class="img-fluid position-absolute element15 bg-left">
+			<img src="img/sec6-ele6.png" id="rightPulse" class="img-fluid position-absolute element15 bg-left">
 			<img src="img/sec6-ele7.png" class="img-fluid position-absolute element16 bg-left">
 		</div>
 
 		<div class="container">
 			<div class="row my-5">
 				<div class="col-10 mx-auto">
-					<img src="img/logo.png">
+					<img src="img/logo.png" id="logo">
+					<h2 class="title text-white font-weight-bold mb-0">MixTanza</h2>
+					<p class="subtitle mb-0">The Future of Audio Mixing</p>
 					<h2 class="text-white font-weight-bold pt-md-3" data-aos="zoom-in-up" data-aos-duration="1200">Start remote audio mixing collaboration</h2>
 					<p class="grey-text" data-aos="zoom-in-down" data-aos-duration="1200">We would love to have you be a part of building Mixtanza. <br>We’re still iterating, improving and bug fixing.</p>
 					<form class="form" action="email.php" method="post">
