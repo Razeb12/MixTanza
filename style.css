@@ -173,13 +173,6 @@ body
 /** END HEADER SECTION **/
 
 /** SECTION 1 STYLING **/
-	/*.section1 h2
-	{
-		font-family: 'Proxima Nova';
-		font-size: 48px;
-		line-height: 58px;
-	}*/
-
 	.section1 p
 	{
 		font-weight: 500;
@@ -330,7 +323,7 @@ body
 		color: #D7D9DD;
 	}
 
-	/* BG ANIMATIONS */
+	/* BG ELEMENTS ANIMATIONS */
 	@keyframes spin
 	{
 	    from
