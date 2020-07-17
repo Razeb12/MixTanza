@@ -16,7 +16,7 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
     // Display the result in element (large screens)
-    document.getElementById("countDownTimer").innerHTML = days + '<p class="mx-5"></p>' + hours + '<p class="mx-5"></p>' + minutes;
+    document.getElementById("countDownTimer").innerHTML = ('0' + days).slice(-2) + '<p class="mx-5"></p>' + ('0' + hours).slice(-2) + '<p class="mx-5"></p>' + ('0' + minutes).slice(-2);
 
     // Display the result in element (smaller screens)
     document.getElementById("countDownTimer-sm").innerHTML = days + "d : " + hours + "h : "
@@ -28,7 +28,6 @@
       document.getElementById("countDownTimer").innerHTML = "We're Live Now!";
     }
   }, 1000);
-
 
 // customScripts
     document.addEventListener('DOMContentLoaded', function() {
@@ -47,7 +46,7 @@
     AOS.init({
       mirror: false
     });
-  
+
     }, false);
 
     //section 6 bg elements animation

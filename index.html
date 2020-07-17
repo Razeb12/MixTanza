@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>MixTanza - The Only Remote Audio Mixing App you Need</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.png" type="image/png">
 	<!-- Font to be used -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
+	<!-- Flickity Slider -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
 	<!-- BOOTSTRAP V4 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<!-- Animate on Scroll CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!-- Flickity Slider -->
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
 	<!-- CSS FILE -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -129,28 +131,59 @@
 			</div>
 
 			<!-- App screen display for large screens - laptop and above -->
-			<div class="row no-gutters align-items-center d-none mt-md-4 py-md-5">
-				<div class="col" data-aos="fade-right" data-aos-duration="1200">
-					<img src="img/app-left.png" class="img-fluid">
-				</div>
-				<div class="col app-mid" data-aos="fade-down" data-aos-duration="1500">
-					<img src="img/app-mid.png" class="img-fluid">
-				</div>
-				<div class="col" data-aos="fade-left" data-aos-duration="1200">
-					<img src="img/app-right.png" class="img-fluid">
-				</div>
-			</div>
-
-			<!-- App screen display for large screens - laptop and above -->
-			<div class="row no-gutters align-items-center d-none d-lg-flex apps mt-md-4 py-md-5">
+			<div class="row no-gutters align-items-center d-none d-lg-flex apps mt-md-4 py-md-5" id="gallery" data-toggle="modal" data-target="#appModal">
 				<div class="col position-relative">
-					<img src="img/app-left.png" class="img-fluid position-absolute app-left" data-aos="fade-right" data-aos-duration="1200">
-					<img src="img/app-mid.png" class="img-fluid position-absolute app-mid" data-aos="fade-down" data-aos-duration="1500">
-					<img src="img/app-right.png" class="img-fluid position-absolute app-right" data-aos="fade-left" data-aos-duration="1200">
+					<img src="img/app-left.png" class="img-fluid position-absolute app-left" data-target="#appCarousel" data-slide-to="0" data-aos="fade-right" data-aos-duration="1200">
+					<img src="img/app-mid.png" class="img-fluid position-absolute app-mid" data-target="#appCarousel" data-slide-to="1" data-aos="fade-down" data-aos-duration="1500">
+					<img src="img/app-right.png" class="img-fluid position-absolute app-right" data-target="#appCarousel" data-slide-to="2" data-aos="fade-left" data-aos-duration="1200">
 				</div>
 			</div>
+			<div class="vh-50 d-none d-lg-block"></div>
 
-			<div class="vh-50"></div>
+			<!-- Modal -->
+			<div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content img-lightbox">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <div id="appCarousel" class="carousel slide" data-ride="carousel">
+			          <ol class="carousel-indicators">
+			            <li data-target="#appCarousel" data-slide-to="0" class="active"></li>
+			            <li data-target="#appCarousel" data-slide-to="1"></li>
+			            <li data-target="#appCarousel" data-slide-to="2"></li>
+			          </ol>
+			          <div class="carousel-inner">
+			            <div class="carousel-item active">
+			              <img class="d-block w-100" src="img/app-left.png" alt="First slide">
+			            </div>
+			            <div class="carousel-item">
+			              <img class="d-block w-100" src="img/app-mid.png" alt="Second slide">
+			            </div>
+			            <div class="carousel-item">
+			              <img class="d-block w-100" src="img/app-right.png" alt="Third slide">
+			            </div>
+			          </div>
+			          <a class="carousel-control-prev" href="#appCarousel" role="button" data-slide="prev">
+			            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			            <span class="sr-only">Previous</span>
+			          </a>
+			          <a class="carousel-control-next" href="#appCarousel" role="button" data-slide="next">
+			            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			            <span class="sr-only">Next</span>
+			          </a>
+			        </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
 		</div>
 	</section>
 	<!-- END SECTION 1 -->
@@ -160,7 +193,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-12 col-md position-relative text-box order-2 order-md-1 my-3 my-md-0 py-5 px-4" data-aos="fade-down" data-aos-duration="1650">
-					<h2 class="text-white font-weight-bold">Remote Access</h2>
+					<h2 class="text-white font-weight-bold">Connect Console</h2>
 					<div class="side-bar"></div>
 					<p class="text-white">Remotely access your mixing console on any device (Mobile Phone, Tablet and Desktop). MixTanza mirrors your console workstation to your device.</p>
 					<span class="cta">
@@ -170,8 +203,24 @@
 						</svg></p></a>
 					</span>
 				</div>
-				<div class="col-12 col-md order-1 order-md-2 my-3 my-md-0 text-center" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec2-app.png" class="img-fluid"></div>
+				<div class="col-12 col-md order-1 order-md-2 my-3 my-md-0 text-center" data-aos="fade-up" data-aos-duration="1650">
+					<img src="img/sec2-app.png" data-toggle="modal" data-target="#imagePopUp" class="img-fluid">
+				</div>
 			</div>
+		</div>
+
+		<!-- Image Pop Up -->
+		<div class="modal fade" id="imagePopUp" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg mt-0" role="document">
+		    <div class="modal-content img-lightbox rounded-0">
+		      <div class="modal-header border-bottom-0 align-items-center">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="text-center"><img src="img/sec2-app.png" class="img-fluid w-50"></div>
+		    </div>
+		  </div>
 		</div>
 	</section>
 	<!-- END SECTION 2 -->
@@ -180,7 +229,7 @@
 	<section class="container-fluid my-md-5 py-md-5 section3">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-12 col-md my-3 my-md-0" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec3-app.png" class="img-fluid"></div>
+				<div class="col-12 col-md my-3 my-md-0 text-center" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec3-app.png" data-toggle="modal" data-target="#imagePopUp2" class="img-fluid"></div>
 				<div class="col-12 col-md position-relative text-box my-3 my-md-0 py-5 px-4" data-aos="fade-down" data-aos-duration="1650">
 					<h2 class="text-white font-weight-bold">Mix Access</h2>
 					<div class="side-bar"></div>
@@ -194,15 +243,29 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Image Pop Up -->
+		<div class="modal fade" id="imagePopUp2" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg mt-0" role="document">
+		    <div class="modal-content img-lightbox rounded-0">
+		      <div class="modal-header border-bottom-0 align-items-center">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="text-center"><img src="img/sec3-app.png" class="img-fluid w-50"></div>
+		    </div>
+		  </div>
+		</div>
 	</section>
 	<!-- END SECTION 3 -->
-	
+
 	<!-- SECTION 4 -->
 	<section class="container-fluid my-md-5 py-md-5 section4">
 		<div class="container">	
 			<div class="row align-items-center">
 				<div class="col-12 col-md position-relative text-box my-3 my-md-0 py-5 px-4 order-2 order-md-1" data-aos="fade-down" data-aos-duration="1650">
-					<h2 class="text-white font-weight-bold">Collaborate</h2>
+					<h2 class="text-white font-weight-bold">Remote Collaboration</h2>
 					<div class="side-bar long-bar"></div>
 					<p class="text-white">Invite other audio engineers to your workstation to help rig your system to optimal performance. Customize and control what they have access to and can see for improved workflow.</p>
 					<span class="cta">
@@ -212,8 +275,22 @@
 						</svg></p></a>
 					</span>
 				</div>
-				<div class="col-12 col-md my-3 my-md-0 order-1 order-md-2 text-center" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec4-app.png" class="img-fluid"></div>
+				<div class="col-12 col-md my-3 my-md-0 order-1 order-md-2 text-center" data-aos="fade-up" data-aos-duration="1650"><img src="img/sec4-app.png" data-toggle="modal" data-target="#imagePopUp3" class="img-fluid"></div>
 			</div>
+		</div>
+
+		<!-- Image Pop Up -->
+		<div class="modal fade" id="imagePopUp3" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg mt-0" role="document">
+		    <div class="modal-content img-lightbox rounded-0">
+		      <div class="modal-header border-bottom-0 align-items-center">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="text-center"><img src="img/sec4-app.png" class="img-fluid w-50"></div>
+		    </div>
+		  </div>
 		</div>
 	</section>
 	<!-- END SECTION 4 -->
@@ -227,11 +304,47 @@
 						<div class="col-12 col-md-7 order-2 order-md-1 pb-4 pb-md-0">
 							<h2 class="text-white font-weight-bold">Pilot with us</h2>
 							<p class="text-white">Looking to have a collaborative mixing session from the comfort of your workstation, we can help each other! Please fill out a quick survey to make sure MixTanza is a good fit for you at our current stage.</p>
-							<button class="btn btn-danger rounded text-white mt-md-4">Take our 5 min Survey</button>
+							<button type="button" class="btn btn-danger rounded text-white mt-md-4" data-toggle="modal" data-target="#surveyForm">Take our 1 min Survey</button>
 						</div>
 						<div class="col-12 col-md-5 order-1 order-md-2"><img src="img/sec5-icon.png" class="img-fluid"></div>
 					</div>
 				</div>
+			</div>
+			<!-- Modal Form Pop Up -->
+			<div class="modal fade" id="surveyForm" tabindex="-1" role="dialog" aria-labelledby="surveyModal" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			    <div class="modal-content surveyform rounded-0 px-md-5">
+			      <div class="modal-header border-bottom-0 align-items-center">
+			      	<h5 class="modal-title text-white surveytitle font-weight-bold" id="surveyModal">Pilot with us</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <form>
+			        <div class="modal-body">
+			          <div class="form-group">
+			            <label for="ques1" class="text-white font-weight-bold">What’s the ONE feature that you would like to see?</label>
+			            <input type="text" class="form-control" id="ques1" aria-describedby="emailHelp" placeholder="Please type here...">
+			          </div>
+			          <div class="form-group">
+			            <label for="ques2" class="text-white font-weight-bold">How do you feel about remote audio mixing collaboration?</label>
+			            <input type="text" class="form-control" id="ques2" aria-describedby="emailHelp" placeholder="Please type here...">
+			          </div>
+			          <div class="form-group">
+			            <label for="ques3" class="text-white font-weight-bold">What’s your biggest mixing challenge as an Audio Engineer?</label>
+			            <input type="text" class="form-control" id="ques3" aria-describedby="emailHelp" placeholder="Please type here...">
+			          </div>
+			          <div class="form-group">
+			            <label for="ques4" class="text-white font-weight-bold">What Consoles do you usually use for your reinforcements?</label>
+			            <input type="text" class="form-control" id="ques4" aria-describedby="emailHelp" placeholder="Please type here...">
+			          </div>
+			        </div>
+			        <div class="modal-footer border-top-0 d-flex justify-content-center">
+			          <button type="submit" class="btn btn-danger btn-block">Submit Response</button>
+			        </div>
+			      </form>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</section>
@@ -251,7 +364,7 @@
 		</div>
 
 		<div class="container">
-			<div class="row my-5">
+			<div class="row mb-5">
 				<div class="col-10 mx-auto">
 					<img src="img/logo.png" id="logo">
 					<h2 class="title text-white font-weight-bold mb-0">MixTanza</h2>
@@ -263,7 +376,7 @@
 						    <div class="col-sm-3 col-md-5">
 						      <label class="sr-only" for="email">Email</label>
 						      <div class="input-group">
-						        <input type="email" class="form-control" id="email" placeholder="name@email.com" name="email">
+						        <input type="email" class="form-control" id="email" placeholder="name@email.com" name="email" required>
 						      </div>
 						    </div>
 						    <div class="col-auto mt-3 mt-md-0">
@@ -272,10 +385,10 @@
 						</div>
 					</form>
 					<span class="cta">
-						<p class="pt-3 font-weight-light">Follow MixTanza on twitter for updates <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<a href="#"><p class="pt-3 font-weight-light">Follow MixTanza on twitter for updates <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						  <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
 						  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
-						</svg></p>
+						</svg></p></a>
 					</span>
 				</div>
 			</div>
@@ -298,7 +411,7 @@
 
 	<!-- SCRIPTS -->
 		<!-- Custom JS -->
-		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<!-- JS, Popper.js, and jQuery -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
