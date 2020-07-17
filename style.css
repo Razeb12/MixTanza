@@ -24,7 +24,7 @@
 		--lightBlue2: #27264D;
 		--textLight: #FAFAFA;
 	}
- /** END UNIVERSAL STYLING **/
+/** END UNIVERSAL STYLING **/
 
 /** SECTIONS CUSTOM STYLING **/
 	.text-box
@@ -72,11 +72,6 @@
 		{
 			height: 50%;
 		}
-	}
-
-	.img-lightbox
-	{
-		background-color: transparent;
 	}
 
 	#imagePopUp .close
@@ -403,6 +398,18 @@
 	    }
 	}
 
+	@keyframes dpulse
+	{
+	    0%
+	    { 
+	    	transform: translateY(10px); 
+	    }
+	    100%
+	    { 
+	    	transform: translateY(0); 
+	    }
+	}
+
 	@keyframes lpulse
 	{
 	    0% 
@@ -488,4 +495,4 @@
 			letter-spacing: 0.1em;
 		}
 	}
-/** END THANK YOU PAGE STYLING **/
+/** END THANK YOU PAGE STYLING *

@@ -53,11 +53,19 @@
     var moveDiv = document.getElementById('mover');
     var rightPulse = document.getElementById('rightPulse');
     var leftPulse = document.getElementById('leftPulse');
+    var downPulse = document.getElementById('downPulse');
     var spinDiv = document.getElementById('spin');
     var spin2Div = document.getElementById('spin2');
     var logoPulse = document.getElementById('logo');
+    var logoPulse2 = document.getElementById('logo2');
+    var logoPulse3 = document.getElementById('logo3');
 
-    //mouse enter animation
+    //animation for section 1
+    document.getElementById("anim").addEventListener("mousemove", function(event) {
+      mouseEnter(event);
+    });
+
+    //animation for section 6 - mouse enter animation
     document.getElementById("access").addEventListener("mouseenter", function(event) {
       mouseEnter(event);
     });
@@ -69,6 +77,9 @@
       spinDiv.style.animation = 'spin 2s infinite linear';
       spin2Div.style.animation = 'spin 1s infinite linear';
       logoPulse.style.animation = 'logopulse 0.6s infinite alternate';
+      downPulse.style.animation = 'dpulse 0.5s infinite alternate';
+      logoPulse2.style.animation = 'logopulse 0.6s infinite alternate';
+      logoPulse3.style.animation = 'logopulse 0.6s infinite alternate';
     }
 
     //mouse leave animation
